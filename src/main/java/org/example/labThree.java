@@ -59,8 +59,7 @@ public class labThree {
                 .post("/createSomething")
                 .then()
                 .statusCode(400)
-                .body("result", equalTo("You don't have permission to create Something"));
-    }
+                .body("result", equalTo("You don't have permission to create Something"));    }
     @Test
     public void testPutMock500() {
         Map<String, String> body = Map.of(
